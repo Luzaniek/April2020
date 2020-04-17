@@ -1,0 +1,28 @@
+from april17 import BinaryTree
+
+lewe = BinaryTree("Ala ma kota", None, None)
+prawe = BinaryTree(None, None, None)
+
+drzewo1 = BinaryTree("Ala", lewe, prawe)
+
+# drzewo2 = BinaryTree(13, lewe = BinaryTree(), prawe = BinaryTree())
+
+k = drzewo1.getNumber()
+node = BinaryTree(None, "Kot", None)
+
+
+def test_default_init():
+    assert node.left is not None
+    print ("Node.left przeszedl")
+    assert node.right is None
+    print ("Node.right przeszedl")
+    assert node.number is None
+    print ("Node.number przeszedl")
+
+
+test_default_init()
+
+uu = node.getNumber()
+
+print (k)
+print (uu)
